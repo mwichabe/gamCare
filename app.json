@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mwichabe.gamCare"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,25 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-updates",
+        {
+          "username": "account-username"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d4d6bd9a-0ebd-459f-8648-0c673a316740"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d4d6bd9a-0ebd-459f-8648-0c673a316740"
     }
   }
 }
